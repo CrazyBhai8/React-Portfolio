@@ -14,7 +14,7 @@ const certificates = [
 const categories = ["All", "IBM", "Udemy", "DataCamp", "Cisco", "Job"]
 
 const CertificateSection = () => {
-    const [activeCategory, setActiveCategory] = useState("all")
+    const [activeCategory, setActiveCategory] = useState("All")
 
     const filterCertificates = certificates.filter((certificate) => {
         if (activeCategory === "All") return true
