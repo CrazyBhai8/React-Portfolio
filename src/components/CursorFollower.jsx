@@ -14,7 +14,7 @@ const CursorFollower = () => {
 
   return (
     <div
-      className="fixed top-0 left-0 z-50 pointer-events-none transition-transform duration-100"
+      className="hidden md:block fixed top-0 left-0 z-50 pointer-events-none transition-transform duration-100"
       style={{
         transform: `translate(${position.x - 35}px, ${position.y - 35}px)`,
       }}

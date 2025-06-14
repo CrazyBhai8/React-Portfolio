@@ -14,7 +14,7 @@ const skills = [
     icons: [
       { name: "Burp Suite", image: "/icons/burpsuite.svg" },
       { name: "Nmap", image: "/icons/nmap.svg", className: "" },
-      { name: "Wireshark", image: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Wireshark_Logo.svg" },
+      { name: "Wireshark", image: "/icons/wireshark.svg" },
     ]
   },
   {
