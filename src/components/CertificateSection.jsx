@@ -25,7 +25,7 @@ const CertificateSection = () => {
         <section id="certificates" className=' px-4 relative'>
             <div className="container mx-auto max-w-5xl px-4 py-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                My <span className="text-primary">Certificates</span>
+                My <span className="text-primary">Certification</span>
             </h2>
 
             <div className="flex flex-wrap justify-center gap-4 mb-12">

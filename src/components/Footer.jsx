@@ -6,6 +6,10 @@ const Footer = () => {
         <footer className='py-12 px-4 bg-card relative border-t border-border mt-12 pt-8 flex flex-wrap items-center justify-between'>
             <p className='text-sm '>Copyright &copy; {new Date().getFullYear()} Vyom Modi. All right reserved.</p>
 
+                <p className='text-sm font-semibold max-w-49  hover:text-primary/80 transition-colors duration-300'>
+                    "l am not who you think I am; I am not who I think I am; I am who I think, you think I am."
+                </p>
+
             <div className='flex space-x-4 justify-between items-center'>
                     <div className='flex space-x-4 justify-center'>
                         <a 
@@ -50,6 +54,7 @@ const Footer = () => {
                 <a href="#hero" className=' inline-flex items-center justify-center rounded-full w-10 h-10 bg-primary/10 hover:bg-primary/20 text-primary transition-colors duration-300'>
                     <ArrowUp size={20} />
                 </a>
+                
             </div>
         </footer>
     )
