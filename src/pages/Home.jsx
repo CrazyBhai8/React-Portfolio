@@ -9,11 +9,13 @@ import ProjectSection from '../components/ProjectSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 import CertificateSection from '../components/CertificateSection';
+import CursorFollower from '../components/CursorFollower';
 
 const Home = () => {
   return (
     <div className='min-h-screen bg-background text-foreground overflow-x-hidden'>
       {/* theme Toggle */}
+      <CursorFollower />
       <ThemeToggle />
 
       {/* Backgraound Effects */}

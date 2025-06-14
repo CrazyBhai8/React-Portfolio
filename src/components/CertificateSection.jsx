@@ -8,7 +8,7 @@ const certificates = [
     { name: 'Data Manipulation in SQL', date: '25-10-2024',category: 'DataCamp', image: '/certificates/sql_data_manipulation.png', link: 'https://www.datacamp.com/completed/statement-of-accomplishment/course/207f4d8d2489b3c82de9b3312323ef2acb0b879d' },
     { name: 'Introduction to Python', date: '03-04-2025',category: 'DataCamp', image: '/certificates/python_intro.png', link: 'https://www.datacamp.com/completed/statement-of-accomplishment/course/95687cb06592283e8d31f36ed3d443af8cf17b82' },
     { name: 'The Complete Certified in Cybersecurity (CC) course ISC2 124', date: '2024',category: 'Udemy', image: '/certificates/cc_course.png', link: 'https://www.udemy.com/certificate/UC-f9c8cd5c-a70f-47b9-bd8a-8bc084f59f4d/' },
-    { name: "The Karma Foundetion Internship", date: "15 Days", category: "Job", image: "/certificates/karma_foun.png", link: "" },
+    { name: "The Karma Foundetion Internship", date: "15 Days", category: "Job", image: "/certificates/karma_foun.png", link: "/certificates/PDFs/Karma%20Foundetion.pdf" },
 ]
 
 const categories = ["All", "IBM", "Udemy", "DataCamp", "Cisco", "Job"]
