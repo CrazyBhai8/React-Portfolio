@@ -1,14 +1,42 @@
 import { Instagram, Linkedin, Mail, Map, Phone, Send, Twitter } from 'lucide-react'
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { useToast } from './hooks/use-toast'
+import emailjs from '@emailjs/browser';
+
 const ContactSection = () => {
     const { toast } = useToast()
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const form = useRef();
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        setIsSubmitting(true)
+const sendEmail = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
 
+    emailjs
+      .sendForm('service_ehq7uhj', 'template_44aitqv', form.current, {
+        publicKey: 'TB_yc_34a3Kh6HDh3',
+      })
+      .then(
+        () => {
+          toast({
+            title: 'Message Sent!',
+            description: "Thank you for your message. I'll get back to you soon.",
+          });
+          setIsSubmitting(false);
+          e.target.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          setIsSubmitting(false);
+        },
+    );
+};
+
+
+const handleSubmit = (e) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    
         setTimeout(() => {
             toast({
                 title: 'Message Sent!',
@@ -16,6 +44,7 @@ const ContactSection = () => {
             })
             setIsSubmitting(false)
         }, 1500)
+        e.target.reset();
     }
     return (
         <section id='contact' className='py-24 px-4 relative '>
@@ -61,7 +90,7 @@ const ContactSection = () => {
                         </div>
                         <div className="pt-8">
                             <h4 className='font-medium mb-4'> Connect With Me</h4>
-                            <jd className='flex space-x-4 justify-center'>
+                            <div className='flex space-x-4 justify-center'>
                                 <a href="https://www.linkedin.com/in/vyom-modi-9b0815275/" target='_blank'>
                                     <Linkedin />
                                 </a>
@@ -71,27 +100,27 @@ const ContactSection = () => {
                                 <a href="https://www.instagram.com/vyom_0.8/" target='_blank'>
                                     <Instagram />
                                 </a>
-                            </jd>
+                            </div>
 
                         </div>
 
                     </div>
                     <div className="bg-card p-8 rounded-lg shadow-xs">
                         <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
-                        <form action="" className='space-y-6'>
+                        <form ref={form} onSubmit={sendEmail} className='space-y-6'>
                             <div>
                                 <label htmlFor="name" className='block text-sm font-medium mb-2'> Your Name</label>
-                                <input type="text" id='name' name='name' required className='w-full px-4 py-3 rounded-md border bg-background focus:outline-hidden focus:ring-2 focus:ring-primary ' placeholder='Your Name' />
+                                <input type="text" id='name' name='user_name' required className='w-full px-4 py-3 rounded-md border bg-background focus:outline-hidden focus:ring-2 focus:ring-primary ' placeholder='Your Name' />
                             </div>
                             <div>
                                 <label htmlFor="email" className='block text-sm font-medium mb-2'> Your Email</label>
-                                <input type="email" id='email' name='email' required className='w-full px-4 py-3 rounded-md border bg-background focus:outline-hidden focus:ring-2 focus:ring-primary ' placeholder='name@example.com' />
+                                <input type="email" id='email' name='user_email' required className='w-full px-4 py-3 rounded-md border bg-background focus:outline-hidden focus:ring-2 focus:ring-primary ' placeholder='name@example.com' />
                             </div>
                             <div>
                                 <label htmlFor="message" className='block text-sm font-medium mb-2'> Your Message</label>
                                 <textarea id='message' name='message' required className='w-full px-4 py-3 rounded-md border bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none ' placeholder='I like to talk about...' />
                             </div>
-                            <button type='submit' disabled={isSubmitting} className='cosmic-button w-full flex items-center justify-center gap-2 ' onClick={handleSubmit}>
+                            <button type='submit' disabled={isSubmitting} className='cosmic-button w-full flex items-center justify-center gap-2 '>
                                 {isSubmitting ? "Sending..." : "Send Message"}<Send size={16} />
                             </button>
 

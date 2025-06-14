@@ -15,7 +15,7 @@ const projects = [
         id: 2,
         title: "File Guard",
         description: "A project enabling email OTP-based sign-up/login and allowing users to hide, view, and unhide hidden files on their system.",
-        image: "/projects/hackalert.png",
+        image: "/projects/fileGuard.png",
         tags: ["Java"],
         demoUrl: "https://crazybhai8.github.io/Hackalert/",
         githubUrl: "https://github.com/CrazyBhai8/Java-Project-FileGuard-using-Email-Authentication-MySQL"
@@ -44,9 +44,9 @@ const ProjectSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, key) => (
                 <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
-                    <div className="h-48 overflow-hidden">
-                        <img src={project.image} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt={project.title} />
-                    </div>
+                        <div className="h-48 overflow-hidden">
+                            <img src={project.image} loading="lazy" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt={project.title} />
+                        </div>
 
                     <div className="p-6">
                         <div className="flex flex-wrap gap-2 mb-4">

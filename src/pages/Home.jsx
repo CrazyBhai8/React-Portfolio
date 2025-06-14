@@ -8,6 +8,7 @@ import SkillsSection from '../components/SkillsSection';
 import ProjectSection from '../components/ProjectSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+import CertificateSection from '../components/CertificateSection';
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
         <AboutSection />
         <SkillsSection />
         <ProjectSection />
+        <CertificateSection />
         <ContactSection />
       </main>
 
