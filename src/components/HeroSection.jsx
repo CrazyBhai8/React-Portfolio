@@ -13,9 +13,9 @@ const HeroSection = () => {
                 </h1>
 
                 <p className='text-lg md:text-xl text-muted-foreground max-w-2xl opacity-0 mx-auto animate-fade-in-delay-3'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellendus eveniet nemo perferendis explicabo repellat pariatur, 
-                    fugiat praesentium ullam mollitia, provident facilis suscipit natus.
+                   I'm passionate about building websites and exploring security vulnerabilities. 
+                   I''ve reported several bugs through bug bounty platforms and love combining 
+                   development with ethical hacking.
                 </p>
 
                 <div className='pt-4 opacity-0 animate-fade-in-delay-4'>

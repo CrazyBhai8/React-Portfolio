@@ -37,7 +37,7 @@ const Navbar = () => {
             </a>
 
             {/* desktop nav */}
-            <div className='hidden md:flex space-x-8'>
+            <div className='hidden mr-5 md:flex p-2 space-x-8'>
                 {navItems.map((item, key) => (
                     <a href={item.href} key={key} className='text-foreground/80 hover:text-primary transition-colors duration-300'>{item.name}</a>
                 ))}
@@ -45,7 +45,7 @@ const Navbar = () => {
             
             {/* mobile nav */}
 
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)}  className='md:hidden p-2 text-foreground z-50 ' aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}> {isMenuOpen ? <X size={24} />: <Menu size={24} /> } </button>
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)}  className='md:hidden p-2 mr-5 text-foreground z-50 ' aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}> {isMenuOpen ? <X size={24} />: <Menu size={24} /> } </button>
 
             <div className= {`fixed w-screen h-screen inset-0  bg-background/95  backdrop-blur-md flex-col flex z-40 justify-center items-center transition-all duration-300 ${isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"} `}>
                 <div className='flex flex-col space-y-8 text-xl'>

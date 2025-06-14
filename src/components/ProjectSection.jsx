@@ -5,7 +5,7 @@ const projects = [
     {
         id: 1,
         title: "HackAlert",
-        description: "A web application there you write your blogs.",
+        description: "A simple blog web app built with React where users can write and publish their own blog posts.",
         image: "/projects/hackAlert.png",
         tags: ["React"],
         demoUrl: "https://crazybhai8.github.io/Hackalert/",
@@ -16,14 +16,14 @@ const projects = [
         title: "File Guard",
         description: "A project enabling email OTP-based sign-up/login and allowing users to hide, view, and unhide hidden files on their system.",
         image: "/projects/hackalert.png",
-        tags: ["React"],
+        tags: ["Java"],
         demoUrl: "https://crazybhai8.github.io/Hackalert/",
         githubUrl: "https://github.com/CrazyBhai8/Java-Project-FileGuard-using-Email-Authentication-MySQL"
     },
     {
         id: 3,
         title: "Travel With Us",
-        description: "Learn for html, css, js",
+        description: "A responsive travel website UI built with HTML, CSS, and JavaScript, focusing purely on front-end design without any interactive features.",
         image: "/projects/travel.png",
         tags: ["Html", "Css", "Js"],
         demoUrl: "https://crazybhai8.github.io/Traveling-Website/",
