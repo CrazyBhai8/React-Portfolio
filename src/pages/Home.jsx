@@ -10,6 +10,7 @@ import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 import CertificateSection from '../components/CertificateSection';
 import CursorFollower from '../components/CursorFollower';
+import ExperienceSection from '../components/ExperienceSection';
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
       <main>
         <HeroSection />
         <AboutSection />
+        <ExperienceSection />
         <SkillsSection />
         <ProjectSection />
         <CertificateSection />
