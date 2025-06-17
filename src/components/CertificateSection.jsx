@@ -33,7 +33,7 @@ const CertificateSection = () => {
                 <button
                     key={index}
                     onClick={() => setActiveCategory(category)}
-                    className={`px-5 py-2 rounded-full font-semibold transition-colors duration-300 ${
+                    className={`px-5 py-2 rounded-full cursor-pointer font-semibold transition-colors duration-300 ${
                     activeCategory === category
                         ? "bg-primary text-white"
                         : "bg-muted text-foreground"
