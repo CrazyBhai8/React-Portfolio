@@ -17,7 +17,7 @@ const projects = [
         description: "A project enabling email OTP-based sign-up/login and allowing users to hide, view, and unhide hidden files on their system.",
         image: "/projects/fileGuard.png",
         tags: ["Java", "MySQL", "Email Authentication"],
-        demoUrl: "https://crazybhai8.github.io/Hackalert/",
+        demoUrl: "https://github.com/CrazyBhai8/Java-Project-FileGuard-using-Email-Authentication-MySQL",
         githubUrl: "https://github.com/CrazyBhai8/Java-Project-FileGuard-using-Email-Authentication-MySQL"
     },
     {
