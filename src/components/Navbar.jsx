@@ -1,5 +1,6 @@
 import { Menu, X } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const navItems = [
     {name: "Home", href: "#hero"},
@@ -9,7 +10,10 @@ const navItems = [
     {name: "Projects", href: "#projects"},
     {name: "Certificates", href: "#certificates"},
     {name: "Contact", href: "#contact"},
+    {name: "Don't Go", href: "/testing"},
 ]
+
+
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -54,6 +58,7 @@ const Navbar = () => {
                     {navItems.map((item, key) => (
                         <a href={item.href} key={key} className='text-foreground/80 hover:text-primary transition-colors duration-300' onClick={() => setIsMenuOpen(false)}>{item.name}</a>
                     ))}
+                    <Link to="/testing">Go to Testing</Link>
                 </div>
             </div>
 
