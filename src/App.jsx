@@ -3,7 +3,7 @@ import  Home  from "./pages/Home"
 import NotFound from "./pages/NotFound"
 import { Toaster } from "./components/ui/toaster"
 import { Analytics } from "@vercel/analytics/react"
-import Testing from "./pages/testing"
+import Testing from "../pages/Testing.jsx"
 
 
 
