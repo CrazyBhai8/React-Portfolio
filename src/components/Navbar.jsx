@@ -58,8 +58,8 @@ const Navbar = () => {
                     {navItems.map((item, key) => (
                         <a href={item.href} key={key} className='text-foreground/80 hover:text-primary transition-colors duration-300' onClick={() => setIsMenuOpen(false)}>{item.name}</a>
                     ))}
-                    <Link to="/testing">Go to Testing</Link>
                 </div>
+                    <Link to="/testing">Go to Testing</Link>
             </div>
 
         </div>
