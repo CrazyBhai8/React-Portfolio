@@ -3,7 +3,6 @@ import  Home  from "./pages/Home"
 import NotFound from "./pages/NotFound"
 import { Toaster } from "./components/ui/toaster"
 import { Analytics } from "@vercel/analytics/react"
-import Testing from "./pages/Testing"
 
 
 
@@ -16,7 +15,6 @@ function App() {
        <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/testing" element={<Testing />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
        </BrowserRouter>
