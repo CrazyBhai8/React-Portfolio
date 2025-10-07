@@ -76,7 +76,7 @@ const handleSubmit = (e) => {
                             </div>
                             <div className='mx-7'>
                                 <h4 className="text-lg font-semibold mb-2"> Phone</h4>
-                                <a href="tel:+916352794030" className="text-foreground/80 hover:text-primary  transition-colors duration-300"> +91 63527 94030</a>
+                                <a  className="text-foreground/80 hover:text-primary  transition-colors duration-300"> +91 XXXXX XXXXX</a>
                             </div>
                         </div>
                         <div className="flex items-start space-x-4">
